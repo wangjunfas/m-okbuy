@@ -4,7 +4,11 @@
   	<div class="main">
 		
 			<!-- banner -->
+<<<<<<< HEAD
 			<mt-swipe :auto="2000">
+=======
+			<mt-swipe :auto="2000" class="homeBanner">
+>>>>>>> 项目初体验
 					<mt-swipe-item  v-for="(v,i) in bannerList" :key="i"><a href="##"><img :src="`http://10.9.163.61:3333/uploads/${v.image}`" alt=""></a></mt-swipe-item>
 			</mt-swipe>
 			<!-- benner end -->
@@ -21,7 +25,11 @@
 				<a href="##"><img src="../assets/box07.png" alt=""></a>
 				<a href="##"><img src="../assets/box08.png" alt=""></a>
 			</div>
+<<<<<<< HEAD
 			<mt-navbar v-model="selected">
+=======
+			<mt-navbar v-model="selected"  class="homeList">
+>>>>>>> 项目初体验
 				<mt-tab-item id="1">全部</mt-tab-item>
 				<mt-tab-item id="2">服饰</mt-tab-item>
 				<mt-tab-item id="3">最新</mt-tab-item>
@@ -162,7 +170,11 @@ export default {
 @import "../styles/yo/usage/core/reset";
 .main{
 	background: #fff;
+<<<<<<< HEAD
 	.mint-swipe {
+=======
+	.homeBanner {
+>>>>>>> 项目初体验
 		height: 1.1rem;
 		width: 100%;
 		a {
@@ -201,11 +213,16 @@ export default {
 			}
 		}
 	}
+<<<<<<< HEAD
 	.mint-navbar{
+=======
+	.homeList{
+>>>>>>> 项目初体验
 		@include flexbox();
 		padding-left: .1rem;
 		height: .36rem;	
 		margin-bottom: .04rem;
+<<<<<<< HEAD
 		.mint-tab-item{
 			width: .4rem;
 			flex: none;
@@ -215,6 +232,17 @@ export default {
 			}
 		}
 		.mint-tab-item.is-selected{
+=======
+		>.mint-tab-item{
+			width: .4rem;
+			flex: none;
+			color: #1c1c1c;
+			>.mint-tab-item-label{
+				font-size: .12rem;
+			}
+		}
+		>.mint-tab-item.is-selected{
+>>>>>>> 项目初体验
 			color: #d20044;
 			border-bottom: 2px solid #d20044;
 			bottom: 2px;
@@ -224,6 +252,7 @@ export default {
 	.indexList{
 		height: 100%;
 		width: 100%;
+<<<<<<< HEAD
 		li{
 			width: 100%;
 			a{
@@ -234,11 +263,27 @@ export default {
 					height: 1.5rem;
 					width: 100%;
 					img{
+=======
+		>li{
+			width: 100%;
+			>a{
+				height: 100%;
+				width: 100%;
+				display: block;
+				>.listPicture{
+					height: 1.5rem;
+					width: 100%;
+					>img{
+>>>>>>> 项目初体验
 						height: 100%;
 						width: 100%;
 					}
 				}
+<<<<<<< HEAD
 				.listTitle{
+=======
+				>.listTitle{
+>>>>>>> 项目初体验
 					height: .42rem;
 					width: 100%;
 					margin: 0 .06rem .07rem;
@@ -246,7 +291,11 @@ export default {
 					@include align-items();
 					@include justify-content();
 					@include border(0 0 1px 0);
+<<<<<<< HEAD
 					span{
+=======
+					>span{
+>>>>>>> 项目初体验
 						font-size: .12rem;
 						color: #d0003b;
 						&:nth-child(2){

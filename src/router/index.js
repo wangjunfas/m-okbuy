@@ -9,8 +9,13 @@ import Shopcar from '@/components/Shopcar'
 import User from '@/components/User'
 import Index from '@/components/Index'
 import Classify from '@/components/Classify'
+<<<<<<< HEAD
 import shopcarList from '@/components/shopcar/shopcarList'
 import unloginEmptyShopcar from '@/components/shopcar/unloginEmptyShopcar'
+=======
+import Signin from '@/components/Signin'
+import Signup from '@/components/signup'
+>>>>>>> 项目初体验
 
 Vue.use(Router)
 
@@ -39,6 +44,7 @@ export default new Router({
         {
           path: 'shopcar',
           name: 'shopcar',
+<<<<<<< HEAD
           component: Shopcar,
           children:[
             {
@@ -52,6 +58,9 @@ export default new Router({
               component:unloginEmptyShopcar
             }
           ]
+=======
+          component: Shopcar
+>>>>>>> 项目初体验
         },
         {
           path: 'user',
@@ -64,6 +73,20 @@ export default new Router({
       path: '/classify',
       name: '/classify',
       component: Classify
+<<<<<<< HEAD
     }  
+=======
+    },
+    {
+      path:'/signin',
+      name:'/signin',
+      component: Signin
+    },
+    {
+      path:'/signup',
+      name:'/signup',
+      component: Signup
+    }   
+>>>>>>> 项目初体验
   ]
 })

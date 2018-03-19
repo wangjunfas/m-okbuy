@@ -7,7 +7,11 @@
         <i class="yo-ico">&#xe60e;</i>
       </div>
       <span class="login">
+<<<<<<< HEAD
          <router-link to="/user" tag="a">
+=======
+         <router-link to="/signin" tag="a">
+>>>>>>> 项目初体验
           <i>登录</i>
         </router-link>
       </span>
