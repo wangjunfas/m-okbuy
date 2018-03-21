@@ -1,0 +1,88 @@
+@import "../yo/usage/core/reset.scss";
+.contentbox {
+    overflow: hidden;
+    min-height: .58rem;
+    background: #eee;
+    .loginfillbox {
+	    background-color: #fff;
+	    margin-top: .1rem;
+	}
+	.loginmethod {
+		padding: 0 .1rem 0 .1rem;
+	    height: .6rem;
+	    overflow: hidden;
+	    line-height: .6rem;
+	    @include flexbox();
+	    @include justify-content(space-between);
+	    @include align-items(center);
+	    .loginshow{
+	    	.ball{
+		    	display: inline-block;
+		    	height: .2rem;
+		    	width: .2rem;
+		    	border:1px #d0d0d0 solid;
+		    	border-radius:50%;
+		    	margin-bottom: -0.04rem;
+		    	margin-right: .1rem;
+		    	
+		    }
+	    }
+	    
+	}
+	.unexcended {
+		padding: 0 .1rem 0 .1rem;
+	    margin-top: .12rem;
+	    color: #666;
+	    .unexc_check {
+		    position: relative;
+		    width: .2rem;
+		    height: .2rem;
+		    .checkbox {
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    width: .2rem;
+			    height: .2rem;
+			    display: none;
+			}
+			img{
+				position: absolute;
+	    		display: inline-block;
+		    	width: .2rem;
+		    	height: .2rem;
+		    }
+		}
+		.rightres{
+			margin-left: .3rem;
+		}
+	}
+	.otherabout {
+	    overflow: hidden;
+	    padding: .2rem .02rem;
+	    @include flexbox();
+	    @include justify-content(space-between);
+	}
+	.otherloginways {
+	    margin-top: .8rem;
+	    @include flexbox();
+	    .flexway{
+			@include flex();
+			@include flexbox();
+			@include justify-content(center);
+			@include border(0 1px 0 0, #b0b0b0,solid);
+			img {
+			    width: .22rem;
+			    height: .22rem;
+			    vertical-align: middle;
+			    margin-top: -0.04rem;
+			}
+			span{
+				margin-left: .1rem;
+			}
+			&:nth-child(3){
+		    	@include border(0 0 0 0	);
+		    }
+	    }
+	    
+	}
+}
